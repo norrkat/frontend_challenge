@@ -16,13 +16,22 @@ body {
 }
 
 .map {
-  position:fixed;
+  background-image: url("images/map2.png");
+  position: fixed;
+}
+
+.pin {
+  display: inline;
+  position: fixed;
+  margin-top: 28px;
+  margin-left: 186px;
+
 }
 
 .navbox {
   width: 375px;
-  height: 64px;
-  margin-top: 44px;
+  height: 50px;
+  margin-top: 21px;
   display: inline-block;
   position: fixed;
   background-color: rgba(252,252,252,0.6);
@@ -32,51 +41,62 @@ body {
   position: fixed;
   margin-top: 629px;
 }
-.backarrow {
+
+.chevron {
   display: inline-block;
   float: left;
-  margin: 1.25em 1em 1em 1em;
+  margin: 1.35em 1em 1em 1em;
+  width: 2.5%;
+  height: auto;
 }
 
 .busstop {
-  padding-top: .75em;
+  padding-top: .55em;
   text-align: left;
 }
 
-.navbox:after {
+.shadow {
   content:'';
-  height: 159px;
+  height: 136px;
   width: 375px;
-  background-color: rgba(195,190,197,0.25);
-  margin-top: 0px;
-  position: absolute;
+  background-color: rgba(195,190,197,0.20);
+  margin-top: 71px;
+  float: left;
+  position: fixed;
+  display: inline-block;
 }
 
 .comingup {
   display: block;
   position: fixed;
   width: 375px;
-  margin-top: 263px;
-  background-color: rgba(252,252,252,0.6);
-}
-
-.whitebox {
-  display: inline;
-  margin-top: 263px;
-  width: 375px;
+  margin-top: 207px;
+  background-color: rgba(252,252,252,0.5);
 }
 
 .routediv {
   display: block;
-  background-color: rgba(252,252,252,0.6);
+  background-color: rgba(252,252,252,0.5);
   overflow-y:scroll;
   width: 375px;
-  height: 316px;
+  height: 373px;
 }
 
 .routes {
   display: inline-block;
-  background-color: rgba(252,252,252);
+  background-color: rgba(255,255,255);
+  border-top: 1px solid #d9d9d9;
+  padding-top: 8px;
+  width: 343px;
+  margin-left: 16px;
+  padding-bottom: 3px;
+  height: 55px;
+}
+
+/*old routes
+.routesb {
+  display: inline-block;
+  background-color: rgba(255,255,255);
   border-top: 1px solid #afafaf;
   border-right: 1px solid #afafaf;
   border-bottom: 1px solid #d9d9d9;
@@ -86,20 +106,14 @@ body {
   margin-left: 16px;
   margin-bottom: 3px;
   height: 55px;
-}
-
-.routes.favorite {
-  border-color: #419722;
-}
+}*/
 
 .routenumber {
-  font-size: 2.5em;
+  font-size: 2.25em;
   text-align: right;
   display: inline-block;
   width: 80px;
-  padding-right: 8px;
-  border-right: 1px solid #979797;
-  line-height: 25px;
+  padding-right: 10px;
   margin-right: 8px;
 }
 
@@ -131,15 +145,16 @@ h3 {
   padding: 16px;
 }
 
-h3:before {
+/*3:before {
   content:'';
   margin-left:-4px;
-  width:350px;
+  width:354px;
   height:1px;
   background:#cccccc;
   position:absolute;
   top:46px;
 }
+*/
 
 h4 {
   font-size: 1.28em;
@@ -154,4 +169,14 @@ ul {
 li {
   list-style: none;
   margin-left: .5em;
+}
+
+.whitebox {
+  display: inline;
+  margin-top: 263px;
+  width: 375px;
+}
+
+.routes.favorite {
+  border-color: #419722;
 }
