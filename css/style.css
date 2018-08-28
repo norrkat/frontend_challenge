@@ -15,8 +15,8 @@ body {
   float: left;
 }
 
-.map {
-  position:fixed;
+a.map {
+
 }
 
 .navbox {
