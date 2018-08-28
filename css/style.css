@@ -16,7 +16,8 @@ body {
 }
 
 .map {
-  position:fixed;
+  background-image: url("images/map.png");
+  position: fixed;
 }
 
 .navbox {
