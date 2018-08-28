@@ -15,10 +15,9 @@ body {
   float: left;
 }
 
-a.map {
+.map {
   position:absolute;
 }
-
 
 .navbox {
   width: 375px;
