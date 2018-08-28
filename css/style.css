@@ -16,7 +16,7 @@ body {
 }
 
 .map {
-  position:absolute;
+  position:fixed;
 }
 
 .navbox {
