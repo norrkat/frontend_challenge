@@ -17,7 +17,6 @@ body {
 
 a.map {
   position:absolute;
-  z-index:0;
 }
 
 
@@ -28,7 +27,6 @@ a.map {
   display: inline-block;
   position: fixed;
   background-color: rgba(252,252,252,0.6);
-  z-index:1;
 }
 
 .toolbar {
