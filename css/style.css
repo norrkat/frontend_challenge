@@ -5,6 +5,7 @@
 body {
   font-family: "Open sans", sans-serif;
   font-size: 14px;
+
   /*background-color: #a6a6a6; /*remove in final draft*/
 }
 
@@ -13,10 +14,18 @@ body {
   width: 375px;
   height: 667px;
   float: left;
+  background-image: url(../images/map.png);
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.map {
-  background-image: url("images/map2.png");
+.shadow {
+  height: 136px;
+  width: 375px;
+  background-color: rgba(195,190,197,0.20);
+  margin-top: 71px;
   position: fixed;
 }
 
@@ -25,21 +34,15 @@ body {
   position: fixed;
   margin-top: 28px;
   margin-left: 186px;
-
 }
 
-.navbox {
+nav {
   width: 375px;
   height: 50px;
   margin-top: 21px;
   display: inline-block;
   position: fixed;
   background-color: rgba(252,252,252,0.6);
-}
-
-.toolbar {
-  position: fixed;
-  margin-top: 629px;
 }
 
 .chevron {
@@ -55,58 +58,32 @@ body {
   text-align: left;
 }
 
-.shadow {
-  content:'';
-  height: 136px;
-  width: 375px;
-  background-color: rgba(195,190,197,0.20);
-  margin-top: 71px;
-  float: left;
-  position: fixed;
-  display: inline-block;
+.toolbar {
+  position: sticky;
+  margin-top: 0;
 }
 
 .comingup {
-  display: block;
-  position: fixed;
-  width: 375px;
+  width: 100%;
   margin-top: 207px;
   background-color: rgba(252,252,252,0.5);
 }
 
 .routediv {
-  display: block;
   background-color: rgba(252,252,252,0.5);
   overflow-y:scroll;
-  width: 375px;
-  height: 373px;
+  width: 100%;
+  height: 370px;
 }
 
 .routes {
-  display: inline-block;
   background-color: rgba(255,255,255);
-  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
   padding-top: 8px;
   width: 343px;
   margin-left: 16px;
-  padding-bottom: 3px;
   height: 55px;
 }
-
-/*old routes
-.routesb {
-  display: inline-block;
-  background-color: rgba(255,255,255);
-  border-top: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-  border-bottom: 1px solid #d9d9d9;
-  border-left: 1px solid #d9d9d9;
-  padding-top: 8px;
-  width: 343px;
-  margin-left: 16px;
-  margin-bottom: 3px;
-  height: 55px;
-}*/
 
 .routenumber {
   font-size: 2.25em;
@@ -145,17 +122,6 @@ h3 {
   padding: 16px;
 }
 
-/*3:before {
-  content:'';
-  margin-left:-4px;
-  width:354px;
-  height:1px;
-  background:#cccccc;
-  position:absolute;
-  top:46px;
-}
-*/
-
 h4 {
   font-size: 1.28em;
   line-height: 1.25em;
@@ -169,14 +135,4 @@ ul {
 li {
   list-style: none;
   margin-left: .5em;
-}
-
-.whitebox {
-  display: inline;
-  margin-top: 263px;
-  width: 375px;
-}
-
-.routes.favorite {
-  border-color: #419722;
 }
