@@ -111,7 +111,7 @@ nav::before {
 }
 
 .chevron:hover,.routes:hover {
-  background-color: rgba(152,216,88,100);
+  background-color: lightgrey;
 }
 
 h2 {
